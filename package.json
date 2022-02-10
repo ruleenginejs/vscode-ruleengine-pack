@@ -1,0 +1,41 @@
+{
+  "name": "vscode-ruleengine-pack",
+  "displayName": "Rule Engine Extension Pack",
+  "description": "Collection of extensions for creating rules in the rule engine.",
+  "author": "Nikolay Naumenkov <nikolas.it.web@gmail.com>",
+  "license": "SEE LICENSE IN LICENSE",
+  "version": "0.0.1",
+  "homepage": "https://github.com/ruleenginejs/vscode-ruleengine-pack",
+  "bugs": {
+    "url": "https://github.com/ruleenginejs/vscode-ruleengine-pack/issues",
+    "email": "nikolas.it.web@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ruleenginejs/vscode-ruleengine-pack.git"
+  },
+  "publisher": "ruleengine",
+  "keywords": [
+    "ruleengine",
+    "editor",
+    "pipeline",
+    "rule",
+    "compiler",
+    "javascript"
+  ],
+  "engines": {
+    "vscode": "^1.64.0"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "icon": "images/logo.png",
+  "extensionPack": [
+    "ruleengine.vscode-ruleengine-editor",
+    "ruleengine.vscode-ruleengine-compiler"
+  ],
+  "scripts": {
+    "postversion": "npm run push",
+    "push": "git push origin master --tags"
+  }
+}
