@@ -8,7 +8,4 @@ This extension pack includes a set of necessary extensions for creating rules:
 ## More Information
 
 - [Documentation](https://ruleengine.org)
-
-## License
-
-[MIT](LICENSE)
+- [License](LICENSE)
