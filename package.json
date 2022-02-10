@@ -1,7 +1,7 @@
 {
   "name": "vscode-ruleengine-pack",
   "displayName": "Rule Engine Extension Pack",
-  "description": "Collection of extensions for creating rules in the rule engine.",
+  "description": "Collection of extensions for creating javascript pipelines.",
   "author": "Nikolay Naumenkov <nikolas.it.web@gmail.com>",
   "license": "SEE LICENSE IN LICENSE",
   "version": "0.0.1",
@@ -35,7 +35,12 @@
     "ruleengine.vscode-ruleengine-compiler"
   ],
   "scripts": {
+    "deploy": "vsce publish --no-yarn",
     "postversion": "npm run push",
-    "push": "git push origin master --tags"
+    "push": "git push origin master --tags",
+    "vsix": "npx vsce package"
+  },
+  "devDependencies": {
+    "vsce": "^2.6.7"
   }
 }
