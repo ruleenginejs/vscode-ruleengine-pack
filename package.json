@@ -24,7 +24,7 @@
     "javascript"
   ],
   "engines": {
-    "vscode": "^1.64.0"
+    "vscode": "^1.67.0"
   },
   "categories": [
     "Extension Packs"
@@ -38,9 +38,13 @@
     "deploy": "vsce publish --no-yarn",
     "postversion": "npm run push",
     "push": "git push origin master --tags",
-    "vsix": "npx vsce package"
+    "vsix": "npx vsce package",
+    "prepare": "husky install"
   },
   "devDependencies": {
-    "vsce": "^2.6.7"
+    "@commitlint/cli": "^17.0.0",
+    "@commitlint/config-angular": "^17.0.0",
+    "husky": "^8.0.1",
+    "vsce": "^2.7.0"
   }
 }
