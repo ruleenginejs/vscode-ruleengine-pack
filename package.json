@@ -38,8 +38,7 @@
     "deploy": "vsce publish --no-yarn",
     "postversion": "npm run push",
     "push": "git push origin master --tags",
-    "vsix": "npx vsce package",
-    "prepare": "husky install"
+    "vsix": "npx vsce package"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
